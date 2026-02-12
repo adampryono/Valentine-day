@@ -49,3 +49,50 @@ body {
     border-radius: 10px;
     margin-top: 20px;
   }
+  
+  .gif_container video {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+
+  /* Responsive design untuk mobile */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 1.8em;
+      padding: 0 20px;
+    }
+
+    .yes-button, .no-button {
+      font-size: 1.2em;
+      padding: 8px 16px;
+    }
+
+    .gif_container video {
+      width: 90vw;
+      height: 90vw;
+      max-width: 400px;
+      max-height: 400px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.5em;
+    }
+
+    .yes-button, .no-button {
+      font-size: 1em;
+      padding: 8px 14px;
+      margin: 5px;
+    }
+
+    .gif_container video {
+      width: 85vw;
+      height: 85vw;
+      max-width: 300px;
+      max-height: 300px;
+    }
+  }
